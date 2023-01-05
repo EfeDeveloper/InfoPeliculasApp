@@ -19,7 +19,7 @@
     "react-native-gesture-handler": "^2.8.0",
     "react-native-safe-area-context": "^4.4.1",
     "react-native-screens": "^3.18.2",
-    "react-native-snap-carousel-deprecated-prop-types": "^3.9.1"
+    "react-native-snap-carousel": "apurba-bware/react-native-snap-carousel#5a7f809e921262e4e2f646e8cfc4da85f7bd663d"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
@@ -29,6 +29,7 @@
     "@types/jest": "^29.2.5",
     "@types/react": "^18.0.26",
     "@types/react-native": "^0.70.8",
+    "@types/react-native-snap-carousel": "^3.8.5",
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",

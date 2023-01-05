@@ -1,7 +1,7 @@
-export interface movieDBNowPlaying {
-  dates: Dates;
+export interface IMovieDBMoviesResponse {
+  dates?: Dates;
   page: number;
-  results: Movie[];
+  results: IMovie[];
   total_pages: number;
   total_results: number;
 }
@@ -11,7 +11,7 @@ export interface Dates {
   minimum: string;
 }
 
-export interface Movie {
+export interface IMovie {
   adult: boolean;
   backdrop_path: string;
   genre_ids: number[];
@@ -31,4 +31,11 @@ export interface Movie {
 export enum OriginalLanguage {
   En = 'en',
   ID = 'id',
+}
+
+export interface MoviesStates {
+  nowPlaying: IMovie[];
+  popular: IMovie[];
+  topRated: IMovie[];
+  upcoming: IMovie[];
 }
