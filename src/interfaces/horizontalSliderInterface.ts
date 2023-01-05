@@ -1,6 +1,6 @@
-import {Movie} from './movieInterface';
+import {IMovie} from './movieInterface';
 
 export interface IHorizontalSlider {
   title?: string;
-  movies: Movie[];
+  movies: IMovie[];
 }

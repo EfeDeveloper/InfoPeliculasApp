@@ -1,7 +1,7 @@
-import {Movie} from './movieInterface';
+import {IMovie} from './movieInterface';
 
 export interface IMoviePoster {
-  movie: Movie;
+  movie: IMovie;
   height?: number;
   width?: number;
 }
