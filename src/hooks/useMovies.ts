@@ -6,8 +6,8 @@ import {
 } from '../interfaces/movieInterface';
 
 export const useMovies = () => {
-  const [isLoading, setIsLoading] = useState(true);
   const [moviesState, setMoviesState] = useState<MoviesStates>({
+    isLoading: true,
     nowPlaying: [],
     popular: [],
     topRated: [],
@@ -20,14 +20,16 @@ export const useMovies = () => {
     const topRated = movieDB.get<IMovieDBMoviesResponse>('/top_rated');
     const upcoming = movieDB.get<IMovieDBMoviesResponse>('/upcoming');
 
-    const resp = await Promise.all([nowPlaying, popular, topRated, upcoming]);
+    const [nowPlayingResp, popularResp, topRatedResp, upcomingResp] =
+      await Promise.all([nowPlaying, popular, topRated, upcoming]);
+
     setMoviesState({
-      nowPlaying: resp[0].data.results,
-      popular: resp[1].data.results,
-      topRated: resp[2].data.results,
-      upcoming: resp[3].data.results,
+      isLoading: false,
+      nowPlaying: nowPlayingResp.data.results,
+      popular: popularResp.data.results,
+      topRated: topRatedResp.data.results,
+      upcoming: upcomingResp.data.results,
     });
-    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -37,6 +39,5 @@ export const useMovies = () => {
 
   return {
     ...moviesState,
-    isLoading,
   };
 };

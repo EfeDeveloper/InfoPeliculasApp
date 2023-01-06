@@ -34,6 +34,7 @@ export enum OriginalLanguage {
 }
 
 export interface MoviesStates {
+  isLoading: boolean;
   nowPlaying: IMovie[];
   popular: IMovie[];
   topRated: IMovie[];
