@@ -1,3 +1,5 @@
 import {StackScreenProps} from '@react-navigation/stack';
+import {RootStackParams} from '../navigation/NavigationController';
 
-export interface IdetailScreen extends StackScreenProps<any, any> {}
+export interface IdetailScreen
+  extends StackScreenProps<RootStackParams, 'DetailScreen'> {}

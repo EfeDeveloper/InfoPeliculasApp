@@ -4,9 +4,10 @@ import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
 import {IMoviePoster} from '../interfaces/moviePosterInterface';
 import {styles} from '../theme/theme';
+import {moviePosterPath} from '../utils';
 
 const MoviePoster = ({movie, width = 300, height = 420}: IMoviePoster) => {
-  const uri = `https://image.tmdb.org/t/p/original/${movie.poster_path}`;
+  const uri = moviePosterPath(movie.poster_path);
   const navigation = useNavigation<StackNavigationProp<any>>();
 
   return (

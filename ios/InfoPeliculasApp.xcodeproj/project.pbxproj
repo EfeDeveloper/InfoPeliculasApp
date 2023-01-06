@@ -41,6 +41,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-InfoPeliculasApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoPeliculasApp.release.xcconfig"; path = "Target Support Files/Pods-InfoPeliculasApp/Pods-InfoPeliculasApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-InfoPeliculasApp-InfoPeliculasAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoPeliculasApp-InfoPeliculasAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InfoPeliculasApp-InfoPeliculasAppTests/Pods-InfoPeliculasApp-InfoPeliculasAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-InfoPeliculasApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfoPeliculasApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6392792429679E9D00F61AAC /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InfoPeliculasApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-InfoPeliculasApp-InfoPeliculasAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoPeliculasApp-InfoPeliculasAppTests.release.xcconfig"; path = "Target Support Files/Pods-InfoPeliculasApp-InfoPeliculasAppTests/Pods-InfoPeliculasApp-InfoPeliculasAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -86,6 +87,7 @@
 		13B07FAE1A68108700A75B9A /* InfoPeliculasApp */ = {
 			isa = PBXGroup;
 			children = (
+				639350BD29678BDC0040E1C3 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -104,6 +106,14 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-InfoPeliculasApp-InfoPeliculasAppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639350BD29678BDC0040E1C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6392792429679E9D00F61AAC /* Ionicons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
