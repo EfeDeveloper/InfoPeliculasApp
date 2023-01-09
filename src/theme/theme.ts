@@ -144,4 +144,8 @@ export const styles = StyleSheet.create({
     top: 30,
     left: 5,
   },
+  //GradientBackground
+  gradientBackgroundView: {
+    flex: 1,
+  },
 });
